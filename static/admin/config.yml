@@ -27,6 +27,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "quote"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
