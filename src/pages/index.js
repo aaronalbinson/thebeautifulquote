@@ -15,7 +15,7 @@ export default class IndexPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
             </div>
-            <div className="columns">
+            <div className="columns is-multiline">
             {posts
               .map(({ node: post }) => (
                 <div
@@ -41,7 +41,7 @@ export default class IndexPage extends React.Component {
                       Keep Reading →
                     </Link>
                   </p>
-                </div> 
+                </div>
               ))}
               </div>
           </div>
