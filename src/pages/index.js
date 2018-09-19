@@ -20,7 +20,7 @@ export default class IndexPage extends React.Component {
               .map(({ node: post }) => (
                 <div
                   className="content column is-3"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                  style={{ border: '1px solid #eaecee'}}
                   key={post.id}
                 >
                   <div className="thumbnail">
