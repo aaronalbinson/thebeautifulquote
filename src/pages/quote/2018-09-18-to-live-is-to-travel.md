@@ -10,7 +10,8 @@ description: >-
   nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna
   mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor
   mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+purchaselink: 'http://amazon.co.uk'
 tags:
   - travel
 ---
-Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+
