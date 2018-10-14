@@ -19,7 +19,7 @@ export default class IndexPage extends React.Component {
             {posts
               .map(({ node: post }) => (
                 <div
-                  className="content column is-3"
+                  className="column is-3"
                   style={{ border: '1px solid #eaecee'}}
                   key={post.id}
                 >
@@ -34,13 +34,7 @@ export default class IndexPage extends React.Component {
                     </Link>
                   </p>
                   <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <a className="button is-small" href={post.frontmatter.purchaselink}> Purchase t-shirt </a>
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
+                    <Link className="button is-small" to={post.frontmatter.purchaselink}> Purchase t-shirt </Link>
                   </p>
                 </div>
               ))}
