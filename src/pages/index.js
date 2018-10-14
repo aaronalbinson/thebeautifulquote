@@ -24,19 +24,20 @@ export default class IndexPage extends React.Component {
                   key={post.id}
                 >
                   <div className="thumbnail">
-                    <img src={post.frontmatter.thumbnail} />
+                    <Link className="has-text-primary" to={post.fields.slug}>
+                      <img src={post.frontmatter.thumbnail} />
+                    </Link>
                   </div>
                   <p>
                     <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
                   </p>
                   <p>
                     {post.excerpt}
                     <br />
                     <br />
+                    <a className="button is-small" href={post.frontmatter.purchaselink}> Purchase t-shirt </a>
                     <Link className="button is-small" to={post.fields.slug}>
                       Keep Reading →
                     </Link>
@@ -77,6 +78,7 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             thumbnail
+            purchaselink
           }
         }
       }
