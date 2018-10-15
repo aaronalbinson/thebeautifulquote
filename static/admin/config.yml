@@ -41,15 +41,15 @@ collections:
       - { label: "Shirt Image", name: "shirtimage", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Amazon USA Link", name: "amzusa", widget: "string" }
-      - { label: "Amazon USA Price", name: "amzusaprice", widget: "string" }
-      - { label: "Amazon UK Link", name: "amzuk", widget: "string" }
-      - { label: "Amazon UK Price", name: "amzukprice", widget: "string" }
-      - { label: "Amazon DE Link", name: "amzde", widget: "string" }
-      - { label: "Amazon DE Price", name: "amzdeprice", widget: "string" }
-      - { label: "Redbubble Link", name: "redbubble", widget: "string" }
-      - { label: "Redbubble Price", name: "redbubbleprice", widget: "string" }
-      - { label: "Other Producs Redbubble link", name: "redbubbleother", widget: "string"}
+      - { label: "Amazon USA Link", name: "amzusa", widget: "string", required: false }
+      - { label: "Amazon USA Price", name: "amzusaprice", widget: "string", required: false }
+      - { label: "Amazon UK Link", name: "amzuk", widget: "string", required: false }
+      - { label: "Amazon UK Price", name: "amzukprice", widget: "string", required: false }
+      - { label: "Amazon DE Link", name: "amzde", widget: "string", required: false }
+      - { label: "Amazon DE Price", name: "amzdeprice", widget: "string", required: false }
+      - { label: "Redbubble Link", name: "redbubble", widget: "string", required: false }
+      - { label: "Redbubble Price", name: "redbubbleprice", widget: "string", required: false }
+      - { label: "Other Producs Redbubble link", name: "redbubbleother", widget: "string", required: false }
       - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "pages"
