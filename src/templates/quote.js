@@ -31,6 +31,38 @@ export const QuoteTemplate = ({
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
+          </div>
+        </div>
+      </div>
+      <div className="container content">
+        <div className="columns">
+          <div className="column is-3">
+            <img src={thumbnail} />
+          </div>
+          <div className="column is-7 is-offset-1">
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+              Get the quote on a t-shirt
+            </h1>
+            <ul>
+              <li>
+                Amazon US <span className="price">PRICE HERE</span>
+              </li>
+              <li>
+                Amazon UK <span className="price">PRICE HERE</span>
+              </li>
+              <li>
+                Amazon DE <span className="price">PRICE HERE</span>
+              </li>
+              <li>
+                Redbubble <span className="price">PRICE HERE</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="container content">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
