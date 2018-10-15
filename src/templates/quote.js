@@ -79,7 +79,7 @@ export const QuoteTemplate = ({
               <br />
               <li>
                 <a className="link" href={redbubbleother}>
-                  Find this quote on other designs
+                  Find this quote on other products
                 </a>
               </li>
             </ul>
