@@ -32,7 +32,7 @@ export const QuoteTemplate = ({
   return (
     <section className="main-section">
       {helmet || ""}
-      <div className="container content">
+      <div className="fluid-container content topSection">
         <div className="columns">
           <div className="column is-3">
             <img src={thumbnail} />

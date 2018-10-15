@@ -24,18 +24,14 @@ export default class IndexPage extends React.Component {
             </div>
             <div className="columns is-multiline">
               {posts.map(({ node: post }) => (
-                <div
-                  className="column is-3"
-                  style={{ border: "1px solid #eaecee" }}
-                  key={post.id}
-                >
+                <div className="column is-3" key={post.id}>
                   <div className="thumbnail">
                     <Link className="has-text-primary" to={post.fields.slug}>
                       <img src={post.frontmatter.thumbnail} />
                     </Link>
                   </div>
                   <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
+                    <Link className="quote-title" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                   </p>

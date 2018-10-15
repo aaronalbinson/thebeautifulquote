@@ -1,9 +1,13 @@
+.topSection {
+    padding: 30px;
+}
+
 .tshirtSection {
     background-color: #3a4075;
     padding: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
     h1 {
-        color: #FFFFFF;
+        color: #ffffff;
     }
     ul {
         margin: 0;
@@ -13,4 +17,36 @@
         margin: 0;
         padding: 0;
     }
+}
+
+.quote-title {
+    background-color: #3a4075;
+    color: #ffffff;
+    display: block;
+    padding: 3px 10px;
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.navbar,
+.navbar-menu,
+.navbar-start,
+.navbar-end {
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navbar-start {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+.navbar-end {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: auto;
 }

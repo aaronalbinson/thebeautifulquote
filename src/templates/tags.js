@@ -7,11 +7,7 @@ class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map(post => (
-      <div
-        className="column is-3"
-        style={{ border: "1px solid #eaecee" }}
-        key={post.id}
-      >
+      <div className="column is-3" key={post.id}>
         <div className="thumbnail">
           <Link className="has-text-primary" to={post.node.fields.slug}>
             <img src={post.node.frontmatter.thumbnail} />
@@ -32,7 +28,7 @@ class TagRoute extends React.Component {
     const tag = this.props.pageContext.tag;
     const title = this.props.data.site.siteMetadata.title;
     const totalCount = this.props.data.allMarkdownRemark.totalCount;
-    const tagHeader = `${totalCount} post${
+    const tagHeader = `${totalCount} quote${
       totalCount === 1 ? "" : "s"
     } tagged with “${tag}”`;
 
