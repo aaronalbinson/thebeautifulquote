@@ -54,34 +54,46 @@ export const QuoteTemplate = ({
               Get the quote on a t-shirt
             </h1>
             <ul>
-              <li>
-                <a className="button" href={amzusa}>
-                  Amazon US <span className="price"> {" " + amzusaprice}</span>
-                </a>
-              </li>
-              <li>
-                <a className="button" href={amzuk}>
-                  <span>Amazon UK </span>
-                  <span className="price"> {amzukprice}</span>
-                </a>
-              </li>
-              <li>
-                <a className="button" href={amzde}>
-                  Amazon DE <span className="price"> {amzdeprice}</span>
-                </a>
-              </li>
-              <li>
-                <a className="button" href={redbubble}>
-                  Redbubble
-                  <span className="price"> {redbubbleprice}</span>
-                </a>
-              </li>
+              {amzusa && (
+                <li>
+                  <a className="button" href={amzusa}>
+                    Amazon US&nbsp;
+                    <span className="price"> {amzusaprice}</span>
+                  </a>
+                </li>
+              )}
+              {amzuk && (
+                <li>
+                  <a className="button" href={amzuk}>
+                    Amazon UK&nbsp;
+                    <span className="price"> {amzukprice}</span>
+                  </a>
+                </li>
+              )}
+              {amzde && (
+                <li>
+                  <a className="button" href={amzde}>
+                    Amazon DE&nbsp;
+                    <span className="price">{amzdeprice}</span>
+                  </a>
+                </li>
+              )}
+              {redbubble && (
+                <li>
+                  <a className="button" href={redbubble}>
+                    Redbubble&nbsp;
+                    <span className="price">{redbubbleprice}</span>
+                  </a>
+                </li>
+              )}
               <br />
-              <li>
-                <a className="link" href={redbubbleother}>
-                  Find this quote on other products
-                </a>
-              </li>
+              {redbubbleother && (
+                <li>
+                  <a className="link" href={redbubbleother}>
+                    Find this quote on other products
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </div>
