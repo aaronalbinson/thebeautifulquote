@@ -1,26 +1,32 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/Layout";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import Dialog from "@material-ui/core/Dialog";
+import Button from "@material-ui/core/Button";
+
+library.add(faShoppingCart);
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
       <Layout>
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+              {/* <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1> */}
             </div>
             <div className="columns is-multiline">
-            {posts
-              .map(({ node: post }) => (
+              {posts.map(({ node: post }) => (
                 <div
                   className="column is-3"
-                  style={{ border: '1px solid #eaecee'}}
+                  style={{ border: "1px solid #eaecee" }}
                   key={post.id}
                 >
                   <div className="thumbnail">
@@ -33,32 +39,34 @@ export default class IndexPage extends React.Component {
                       {post.frontmatter.title}
                     </Link>
                   </p>
-                  <p>
-                    <Link className="button is-small" to={post.frontmatter.purchaselink}> Purchase t-shirt </Link>
-                  </p>
+                  {/* <p>
+                    <Button onClick={this.handleOpen}>
+                      <FontAwesomeIcon icon="shopping-cart" />
+                    </Button>
+                  </p> */}
                 </div>
               ))}
-              </div>
+            </div>
           </div>
         </section>
       </Layout>
-    )
+    );
   }
 }
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+      edges: PropTypes.array
+    })
+  })
+};
 
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "quote" } }}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "quote" } } }
     ) {
       edges {
         node {
@@ -78,4 +86,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

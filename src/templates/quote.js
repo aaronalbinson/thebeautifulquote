@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 
 export const QuoteTemplate = ({
   content,
@@ -13,15 +13,19 @@ export const QuoteTemplate = ({
   tags,
   title,
   helmet,
+  thumbnail
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
   return (
     <section className="section">
-      {helmet || ''}
+      {helmet || ""}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-3">
+            <img src={thumbnail} />
+          </div>
+          <div className="column is-7 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -43,19 +47,19 @@ export const QuoteTemplate = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 QuoteTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
-}
+  helmet: PropTypes.instanceOf(Helmet)
+};
 
 const Quote = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -66,18 +70,19 @@ const Quote = ({ data }) => {
         helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        thumbnail={post.frontmatter.thumbnail}
       />
     </Layout>
-  )
-}
+  );
+};
 
 Quote.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+    markdownRemark: PropTypes.object
+  })
+};
 
-export default Quote
+export default Quote;
 
 export const pageQuery = graphql`
   query QuoteByID($id: String!) {
@@ -89,7 +94,8 @@ export const pageQuery = graphql`
         title
         description
         tags
+        thumbnail
       }
     }
   }
-`
+`;
