@@ -13,7 +13,17 @@ export const QuoteTemplate = ({
   tags,
   title,
   helmet,
-  thumbnail
+  thumbnail,
+  shirtimage,
+  amzusa,
+  amzusaprice,
+  amzuk,
+  amzukprice,
+  amzde,
+  amzdeprice,
+  redbubble,
+  redbubbleprice,
+  redbubbleother
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -37,7 +47,7 @@ export const QuoteTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-3">
-            <img src={thumbnail} />
+            <img src={shirtimage} />
           </div>
           <div className="column is-7 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -45,16 +55,32 @@ export const QuoteTemplate = ({
             </h1>
             <ul>
               <li>
-                Amazon US <span className="price">PRICE HERE</span>
+                <a className="button" href={amzusa}>
+                  Amazon US <span className="price"> {" " + amzusaprice}</span>
+                </a>
               </li>
               <li>
-                Amazon UK <span className="price">PRICE HERE</span>
+                <a className="button" href={amzuk}>
+                  <span>Amazon UK </span>
+                  <span className="price"> {amzukprice}</span>
+                </a>
               </li>
               <li>
-                Amazon DE <span className="price">PRICE HERE</span>
+                <a className="button" href={amzde}>
+                  Amazon DE <span className="price"> {amzdeprice}</span>
+                </a>
               </li>
               <li>
-                Redbubble <span className="price">PRICE HERE</span>
+                <a className="button" href={redbubble}>
+                  Redbubble
+                  <span className="price"> {redbubbleprice}</span>
+                </a>
+              </li>
+              <br />
+              <li>
+                <a className="link" href={redbubbleother}>
+                  Find this quote on other designs
+                </a>
               </li>
             </ul>
           </div>
@@ -103,6 +129,16 @@ const Quote = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         thumbnail={post.frontmatter.thumbnail}
+        shirtimage={post.frontmatter.shirtimage}
+        amzusa={post.frontmatter.amzusa}
+        amzusaprice={post.frontmatter.amzusaprice}
+        amzuk={post.frontmatter.amzuk}
+        amzukprice={post.frontmatter.amzukprice}
+        amzde={post.frontmatter.amzde}
+        amzdeprice={post.frontmatter.amzdeprice}
+        redbubble={post.frontmatter.redbubble}
+        redbubbleprice={post.frontmatter.redbubbleprice}
+        redbubbleother={post.frontmatter.redbubbleother}
       />
     </Layout>
   );
@@ -127,6 +163,16 @@ export const pageQuery = graphql`
         description
         tags
         thumbnail
+        shirtimage
+        amzusa
+        amzusaprice
+        amzuk
+        amzukprice
+        amzde
+        amzdeprice
+        redbubble
+        redbubbleprice
+        redbubbleother
       }
     }
   }
