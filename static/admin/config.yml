@@ -40,7 +40,7 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Shirt Image", name: "shirtimage", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Amazon USA Link", name: "amzusa", widget: "string", required: false }
       - { label: "Amazon USA Price", name: "amzusaprice", widget: "string", required: false }
       - { label: "Amazon UK Link", name: "amzuk", widget: "string", required: false }

@@ -6,6 +6,8 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
+require("../styles/styles.scss");
+
 export const QuoteTemplate = ({
   content,
   contentComponent,
@@ -28,7 +30,7 @@ export const QuoteTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
+    <section className="main-section">
       {helmet || ""}
       <div className="container content">
         <div className="columns">
@@ -44,11 +46,9 @@ export const QuoteTemplate = ({
           </div>
         </div>
       </div>
-      <div className="container content">
+
+      <div className="fluid-container content tshirtSection">
         <div className="columns">
-          <div className="column is-3">
-            <img src={shirtimage} />
-          </div>
           <div className="column is-7 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               Get the quote on a t-shirt
@@ -95,6 +95,9 @@ export const QuoteTemplate = ({
                 </li>
               )}
             </ul>
+          </div>
+          <div className="column is-3">
+            <img src={shirtimage} />
           </div>
         </div>
       </div>
