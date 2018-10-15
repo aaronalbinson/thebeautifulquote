@@ -2,13 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Dialog from "@material-ui/core/Dialog";
 import Button from "@material-ui/core/Button";
-
-library.add(faShoppingCart);
 
 export default class IndexPage extends React.Component {
   render() {

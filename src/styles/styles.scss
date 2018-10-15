@@ -1,3 +1,7 @@
+a {
+    color: #3a4075;
+}
+
 .topSection {
     padding: 30px;
 }
@@ -49,4 +53,11 @@
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin-left: auto;
+}
+
+.navbar-item,
+.navbar-link {
+    &:hover {
+        color: #3a4075;
+    }
 }

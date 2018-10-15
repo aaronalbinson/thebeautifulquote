@@ -285,7 +285,7 @@ const Navbar = () => (
                 />
               </svg>
             </a>
-            <a href="facebook.com">
+            <a href="https://www.facebook.com/thebeautquote/">
               <svg
                 width="30"
                 height="30"
@@ -303,7 +303,7 @@ const Navbar = () => (
                 />
               </svg>
             </a>
-            <a href="twitter.com">
+            <a href="https://twitter.com/TheBeautQuote">
               <svg
                 width="30"
                 height="30"
