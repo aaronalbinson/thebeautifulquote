@@ -14,8 +14,8 @@ description: >-
   spends all day with their cats, this is the perfect shirt for exactly that.
 
 
-  We all have one of those friends that likes to spend all day in their pajamas
-  with their cat. This is the perfect t-shirt to do just that in.
+  > We all have one of those friends that likes to spend all day in their
+  pajamas with their cat. This is the perfect t-shirt to do just that in.
 amzusa: 'https://www.amazon.com/dp/B07GBJ9CW6'
 amzusaprice: $14.99
 amzuk: 'https://www.amazon.co.uk/dp/B07JVV7FHJ'
