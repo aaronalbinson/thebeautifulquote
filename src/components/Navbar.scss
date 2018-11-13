@@ -8,3 +8,71 @@
 .logo svg {
     width: 250px;
 }
+
+a {
+    color: #3a4075;
+}
+
+.topSection {
+    padding: 30px;
+}
+
+.tshirtSection {
+    background-color: #3a4075;
+    padding: 30px;
+    color: #ffffff;
+    h1 {
+        color: #ffffff;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.quote-title {
+    background-color: #3a4075;
+    color: #ffffff;
+    display: block;
+    padding: 3px 10px;
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.navbar,
+.navbar-menu,
+.navbar-start,
+.navbar-end {
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navbar-start {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+.navbar-end {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.navbar-item,
+.navbar-link {
+    &:hover {
+        color: #3a4075;
+    }
+}
+
+.price {
+    font-weight: bold;
+}
