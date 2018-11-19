@@ -7,6 +7,8 @@ date: 2018-11-13T22:02:01.175Z
 description: >-
   The perfect quote for a chemist or chemist student. Alcohol is the solution to
   all problems.
+amzusa: 'https://www.amazon.com/chemists-alcohol-not-problem-solution/dp/B07KGXR8X1'
+amzusaprice: $19.99
 redbubble: >-
   https://www.redbubble.com/people/beautifulquote/works/35045181-for-chemists-alcohol-is-not-a-problem-its-a-solution?asc=u&p=t-shirt
 redbubbleprice: £14.79
