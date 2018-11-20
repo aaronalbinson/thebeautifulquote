@@ -13,6 +13,34 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section className="section">
+          <div className="columns is-multiline">
+            <div className="column is-3">
+              <a href="/tags/animals/">Pets</a>
+            </div>
+            <div className="column is-3">
+              <a href="/tags/animals/">Pets</a>
+            </div>
+            <div className="column is-3">
+              <a href="/tags/animals/">Pets</a>
+            </div>
+            <div className="column is-3">
+              <a href="/tags/animals/">Pets</a>
+            </div>
+            <div className="column is-3">
+              <a href="/tags/animals/">Pets</a>
+            </div>
+            <div className="column is-3">
+              <a href="/tags/animals/">Pets</a>
+            </div>
+            <div className="column is-3">
+              <a href="/tags/animals/">Pets</a>
+            </div>
+            <div className="column is-3">
+              <a href="/tags/animals/">Pets</a>
+            </div>
+          </div>
+        </section>
+        <section className="section">
           <div className="">
             <div className="content">
               {/* <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1> */}
