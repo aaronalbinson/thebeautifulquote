@@ -16,8 +16,8 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section className="section categories">
-          <div className="columns is-multiline">
-            <div className="column is-3">
+          <div className="columns is-multiline is-desktop">
+            <div className="column is-3 is-6-mobile">
               <Category
                 showTitle={true}
                 image={Animals}
@@ -26,7 +26,7 @@ export default class IndexPage extends React.Component {
                 color="#61a13e"
               />
             </div>
-            <div className="column is-3">
+            <div className="column is-3 is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -35,7 +35,7 @@ export default class IndexPage extends React.Component {
                 color="#5d77a0"
               />
             </div>
-            <div className="column is-3">
+            <div className="column is-3 is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -44,7 +44,7 @@ export default class IndexPage extends React.Component {
                 color="#a04f5e"
               />
             </div>
-            <div className="column is-3">
+            <div className="column is-3 is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -53,7 +53,7 @@ export default class IndexPage extends React.Component {
                 color="#a29b1f"
               />
             </div>
-            <div className="column is-3">
+            <div className="column is-3 is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -61,7 +61,7 @@ export default class IndexPage extends React.Component {
                 link="/tags/animals/"
               />
             </div>
-            <div className="column is-3">
+            <div className="column is-3 is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -69,7 +69,7 @@ export default class IndexPage extends React.Component {
                 link="/tags/animals/"
               />
             </div>
-            <div className="column is-3">
+            <div className="column is-3 is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -77,7 +77,7 @@ export default class IndexPage extends React.Component {
                 link="/tags/animals/"
               />
             </div>
-            <div className="column is-3">
+            <div className="column is-3 is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -92,9 +92,9 @@ export default class IndexPage extends React.Component {
             <div className="content">
               {/* <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1> */}
             </div>
-            <div className="columns is-multiline">
+            <div className="columns is-multiline is-desktop">
               {posts.map(({ node: post }) => (
-                <div className="column is-3" key={post.id}>
+                <div className="column is-3 is-6-mobile" key={post.id}>
                   <div className="thumbnail">
                     <Link className="has-text-primary" to={post.fields.slug}>
                       <img src={post.frontmatter.thumbnail} />
