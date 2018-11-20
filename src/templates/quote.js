@@ -33,11 +33,11 @@ export const QuoteTemplate = ({
     <section className="main-section">
       {helmet || ""}
       <div className="fluid-container content topSection">
-        <div className="columns">
-          <div className="column is-3-desktop">
+        <div className="columns is-multiline">
+          <div className="column is-3-desktop is-12-mobile">
             <img src={thumbnail} />
           </div>
-          <div className="column is-7 is-offset-1">
+          <div className="column is-7-desktop is-12-mobile is-offset-1-desktop">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
