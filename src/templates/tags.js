@@ -2,27 +2,23 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
+import Category from "../components/category/category";
+
+require("../templates/tags.scss");
 
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map(post => (
-      <div className="column is-3" key={post.id}>
-        <div className="thumbnail">
-          <Link className="has-text-primary" to={post.node.fields.slug}>
-            <img src={post.node.frontmatter.thumbnail} />
-          </Link>
-        </div>
-        <p>
-          <Link className="has-text-primary" to={post.node.fields.slug}>
-            {post.node.frontmatter.title}
-          </Link>
-        </p>
-        {/* <p>
-        <Button onClick={this.handleOpen}>
-          <FontAwesomeIcon icon="shopping-cart" />
-        </Button>
-      </p> */}
+      <div className="column is-3">
+        <Category
+          showtitle={false}
+          image={post.node.frontmatter.thumbnail}
+          categoryName={post.node.frontmatter.title}
+          link={post.node.fields.slug}
+          color="#3a4075"
+          imgBgColor="#FFFFFF"
+        />
       </div>
     ));
     const tag = this.props.pageContext.tag;
@@ -34,22 +30,11 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: "6rem" }}
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="tag-header">
+          <h2>{tag} Quotes</h2>
+        </div>
+        <section className="section categories">
+          <div className="columns is-multiline">{postLinks}</div>
         </section>
       </Layout>
     );

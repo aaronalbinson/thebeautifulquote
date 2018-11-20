@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Dialog from "@material-ui/core/Dialog";
 import Button from "@material-ui/core/Button";
+import Category from "../components/category/category";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -12,43 +13,75 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="section categories">
           <div className="columns is-multiline">
             <div className="column is-3">
-              <div class="hovereffect">
-                <img
-                  class="img-responsive"
-                  src="http://placehold.it/350x250"
-                  alt=""
-                />
-                <div class="overlay">
-                  <h2>Effect 12</h2>
-                  <p>
-                    <a href="#">LINK HERE</a>
-                  </p>
-                </div>
-              </div>
+              <Category
+                showTitle={true}
+                image="https://placehold.it/350x250"
+                categoryName="Animals"
+                link="/tags/animal/"
+                color="#61a13e"
+              />
             </div>
             <div className="column is-3">
-              <a href="/tags/animals/">Pets</a>
+              <Category
+                showTitle={true}
+                image="https://placehold.it/350x250"
+                categoryName="Jokes"
+                link="/tags/joke/"
+                color="#5d77a0"
+              />
             </div>
             <div className="column is-3">
-              <a href="/tags/animals/">Pets</a>
+              <Category
+                showTitle={true}
+                image="https://placehold.it/350x250"
+                categoryName="Student quotes"
+                link="/tags/student/"
+                color="#a04f5e"
+              />
             </div>
             <div className="column is-3">
-              <a href="/tags/animals/">Pets</a>
+              <Category
+                showTitle={true}
+                image="https://placehold.it/350x250"
+                categoryName="Sports"
+                link="/tags/sport/"
+                color="#a29b1f"
+              />
             </div>
             <div className="column is-3">
-              <a href="/tags/animals/">Pets</a>
+              <Category
+                showTitle={true}
+                image="https://placehold.it/350x250"
+                categoryName="Animals"
+                link="/tags/animals/"
+              />
             </div>
             <div className="column is-3">
-              <a href="/tags/animals/">Pets</a>
+              <Category
+                showTitle={true}
+                image="https://placehold.it/350x250"
+                categoryName="Animals"
+                link="/tags/animals/"
+              />
             </div>
             <div className="column is-3">
-              <a href="/tags/animals/">Pets</a>
+              <Category
+                showTitle={true}
+                image="https://placehold.it/350x250"
+                categoryName="Animals"
+                link="/tags/animals/"
+              />
             </div>
             <div className="column is-3">
-              <a href="/tags/animals/">Pets</a>
+              <Category
+                showTitle={true}
+                image="https://placehold.it/350x250"
+                categoryName="Animals"
+                link="/tags/animals/"
+              />
             </div>
           </div>
         </section>

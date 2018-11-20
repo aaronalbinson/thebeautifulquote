@@ -28,7 +28,7 @@ redbubbleprice: £14.79
 redbubbleother: >-
   https://www.redbubble.com/people/beautifulquote/works/33271111-im-only-talking-to-my-cat-today?asc=u&modal=%2Fboom%2Fb%2FavailableProducts%2F33271111&p=t-shirt
 tags:
-  - animals
-  - cats
+  - animal
+  - cat
 ---
 

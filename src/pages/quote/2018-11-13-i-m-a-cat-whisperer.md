@@ -16,7 +16,8 @@ redbubbleprice: £14.79
 redbubbleother: >-
   https://www.redbubble.com/people/beautifulquote/works/35041649-im-a-cat-whisperer-quote?asc=u&modal=%2Fboom%2Fb%2FavailableProducts%2F35041649&p=t-shirt
 tags:
-  - cats
-  - pets
+  - cat
+  - pet
+  - animal
 ---
 

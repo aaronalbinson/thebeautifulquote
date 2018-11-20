@@ -23,6 +23,16 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          "fredoka one",
+          "alegreya sans",
+          "source sans pro:300,400,400i,700"
+        ]
+      }
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: []
