@@ -6,6 +6,8 @@ import Dialog from "@material-ui/core/Dialog";
 import Button from "@material-ui/core/Button";
 import Category from "../components/category/category";
 
+import Animals from "../img/animals.png";
+
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
@@ -18,7 +20,7 @@ export default class IndexPage extends React.Component {
             <div className="column is-3">
               <Category
                 showTitle={true}
-                image="https://placehold.it/350x250"
+                image={Animals}
                 categoryName="Animals"
                 link="/tags/animal/"
                 color="#61a13e"
