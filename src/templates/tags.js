@@ -10,7 +10,7 @@ class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map(post => (
-      <div className="column is-3">
+      <div className="column is-3-desktop">
         <Category
           showtitle={false}
           image={post.node.frontmatter.thumbnail}

@@ -34,7 +34,7 @@ export const QuoteTemplate = ({
       {helmet || ""}
       <div className="fluid-container content topSection">
         <div className="columns">
-          <div className="column is-3">
+          <div className="column is-3-desktop">
             <img src={thumbnail} />
           </div>
           <div className="column is-7 is-offset-1">
@@ -135,7 +135,7 @@ export const QuoteTemplate = ({
               )}
             </ul>
           </div>
-          <div className="column is-3">
+          <div className="column is-3-desktop">
             <img src={shirtimage} />
           </div>
         </div>
