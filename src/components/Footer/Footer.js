@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="foo_top_header_one section_padding_100_70">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-6 col-lg-3">
+          <div className="is-12 is-6-tablet is-3-desktop">
             <div className="kilimanjaro_part">
               <h5>About Us</h5>
               <p>
@@ -55,7 +55,7 @@ const Footer = () => (
               </ul>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-3">
+          <div className="is-12 is-6-tablet is-3-desktop">
             <div className="kilimanjaro_part">
               <h5>Tags Widget</h5>
               <ul className=" kilimanjaro_widget">
@@ -128,7 +128,7 @@ const Footer = () => (
               </ul>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-3">
+          <div className="is-12 is-6-tablet is-3-desktop">
             <div className="kilimanjaro_part">
               <h5>Latest News</h5>
               <div className="kilimanjaro_blog_area">
@@ -169,7 +169,7 @@ const Footer = () => (
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-3">
+          <div className="is-12 is-6-tablet is-3-desktop">
             <div className="kilimanjaro_part">
               <h5>Quick Contact</h5>
               <div className="kilimanjaro_single_contact_info">
@@ -215,7 +215,7 @@ const Footer = () => (
     <div className="kilimanjaro_bottom_header_one section_padding_50 text-center">
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="is-12">
             <p>
               © All Rights Reserved by{" "}
               <a href="#">
