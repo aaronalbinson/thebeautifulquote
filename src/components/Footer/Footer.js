@@ -6,8 +6,8 @@ require("./Footer.scss");
 const Footer = () => (
   <footer className="kilimanjaro_area">
     <div className="foo_top_header_one section_padding_100_70">
-      <div className="container">
-        <div className="row">
+      <div className="columns">
+        <div className="column">
           <div className="is-12 is-6-tablet is-3-desktop">
             <div className="kilimanjaro_part">
               <h5>About Us</h5>
@@ -213,8 +213,8 @@ const Footer = () => (
       </div>
     </div>
     <div className="kilimanjaro_bottom_header_one section_padding_50 text-center">
-      <div className="container">
-        <div className="row">
+      <div className="columns">
+        <div className="column">
           <div className="is-12">
             <p>
               © All Rights Reserved by{" "}
