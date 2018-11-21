@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import Category from "../components/category/category";
 
 import Animals from "../img/animals.png";
+import Students from "../img/students.png";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -29,7 +30,7 @@ export default class IndexPage extends React.Component {
             <div className="column is-3-desktop is-6-mobile">
               <Category
                 showTitle={true}
-                image="https://placehold.it/350x250"
+                image={Students}
                 categoryName="Jokes"
                 link="/tags/joke/"
                 color="#5d77a0"
@@ -38,7 +39,7 @@ export default class IndexPage extends React.Component {
             <div className="column is-3-desktop is-6-mobile">
               <Category
                 showTitle={true}
-                image="https://placehold.it/350x250"
+                image={Students}
                 categoryName="Student quotes"
                 link="/tags/student/"
                 color="#a04f5e"
