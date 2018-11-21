@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+require("./Footer.scss");
+
 const Footer = () => (
   <footer className="kilimanjaro_area">
     <div className="foo_top_header_one section_padding_100_70">
