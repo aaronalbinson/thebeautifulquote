@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const footer = () => (
+const Footer = () => (
   <footer className="kilimanjaro_area">
     <div className="foo_top_header_one section_padding_100_70">
       <div className="container">
@@ -228,4 +228,4 @@ const footer = () => (
   </footer>
 );
 
-export default footer;
+export default Footer;
