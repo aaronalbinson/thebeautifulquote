@@ -3,7 +3,7 @@
   z-index: 1;
 }
 .foo_top_header_one {
-  background-color: #15151e;
+  background-color: #3a4075;
   color: #fff;
 }
 .section_padding_100_70 {
@@ -102,10 +102,11 @@ ul {
 .kilimanjaro_links a {
   border-bottom: 1px solid #333;
   color: rgba(255, 255, 255, 0.5);
-  display: block;
   font-size: 13px;
   margin-bottom: 5px;
   padding-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 .kilimanjaro_links a {
   color: rgba(255, 255, 255, 0.5);
@@ -204,8 +205,15 @@ ol li {
 .kilimanjaro_links a {
   border-bottom: 1px solid #333;
   color: rgba(255, 255, 255, 0.5);
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 13px;
   margin-bottom: 5px;
   padding-bottom: 10px;
+}
+
+.socialLinks {
+  a{
+    color: #FFFFFF !important;
+  }
 }

@@ -10,6 +10,7 @@ import Animals from "../img/animals.png";
 import Funny from "../img/funny.png";
 import Students from "../img/students.png";
 import Sports from "../img/sports.png";
+import Like from "../img/like.png";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -59,17 +60,19 @@ export default class IndexPage extends React.Component {
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
-                image="https://placehold.it/350x250"
-                categoryName="Animals"
-                link="/tags/animals/"
+                image={Students}
+                categoryName="Student quotes"
+                link="/tags/student/"
+                color="#a04f5e"
               />
             </div>
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
-                image="https://placehold.it/350x250"
-                categoryName="Animals"
-                link="/tags/animals/"
+                image={Like}
+                categoryName="Like on Facebook"
+                link="https://www.facebook.com/thebeautquote/"
+                color="#3a4174"
               />
             </div>
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
