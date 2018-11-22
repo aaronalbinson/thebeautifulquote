@@ -7,7 +7,9 @@ import Button from "@material-ui/core/Button";
 import Category from "../components/category/category";
 
 import Animals from "../img/animals.png";
+import Funny from "../img/funny.png";
 import Students from "../img/students.png";
+import Sports from "../img/sports.png";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -18,7 +20,7 @@ export default class IndexPage extends React.Component {
       <Layout>
         <section className="section categories">
           <div className="columns is-multiline is-desktop">
-            <div className="column is-3-desktop is-6-mobile">
+            <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
                 image={Animals}
@@ -27,16 +29,16 @@ export default class IndexPage extends React.Component {
                 color="#61a13e"
               />
             </div>
-            <div className="column is-3-desktop is-6-mobile">
+            <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
-                image={Students}
+                image={Funny}
                 categoryName="Jokes"
                 link="/tags/joke/"
                 color="#5d77a0"
               />
             </div>
-            <div className="column is-3-desktop is-6-mobile">
+            <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
                 image={Students}
@@ -45,16 +47,16 @@ export default class IndexPage extends React.Component {
                 color="#a04f5e"
               />
             </div>
-            <div className="column is-3-desktop is-6-mobile">
+            <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
-                image="https://placehold.it/350x250"
+                image={Sports}
                 categoryName="Sports"
                 link="/tags/sport/"
                 color="#a29b1f"
               />
             </div>
-            <div className="column is-3-desktop is-6-mobile">
+            <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -62,7 +64,7 @@ export default class IndexPage extends React.Component {
                 link="/tags/animals/"
               />
             </div>
-            <div className="column is-3-desktop is-6-mobile">
+            <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -70,7 +72,7 @@ export default class IndexPage extends React.Component {
                 link="/tags/animals/"
               />
             </div>
-            <div className="column is-3-desktop is-6-mobile">
+            <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -78,7 +80,7 @@ export default class IndexPage extends React.Component {
                 link="/tags/animals/"
               />
             </div>
-            <div className="column is-3-desktop is-6-mobile">
+            <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
                 image="https://placehold.it/350x250"
@@ -95,7 +97,10 @@ export default class IndexPage extends React.Component {
             </div>
             <div className="columns is-multiline is-desktop">
               {posts.map(({ node: post }) => (
-                <div className="column is-3-desktop is-6-mobile" key={post.id}>
+                <div
+                  className="column is-3-desktop is-3-tablet is-6-mobile"
+                  key={post.id}
+                >
                   <div className="thumbnail">
                     <Link className="has-text-primary" to={post.fields.slug}>
                       <img src={post.frontmatter.thumbnail} />
