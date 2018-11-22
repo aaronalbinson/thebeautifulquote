@@ -31,7 +31,7 @@ class Category extends React.Component {
             <div className="overlay">
               {this.props.showTitle ? <h2>{this.props.categoryName}</h2> : ""}
               <a className="overlayLink" href={this.props.link}>
-                <p>MORE</p>
+                <p>{this.props.more ? this.props.more : "more"}</p>
               </a>
             </div>
           </a>

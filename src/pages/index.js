@@ -68,11 +68,12 @@ export default class IndexPage extends React.Component {
             </div>
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
-                showTitle={true}
+                showTitle={false}
                 image={Like}
                 categoryName="Like on Facebook"
                 link="https://www.facebook.com/thebeautquote/"
                 color="#3a4174"
+                more="Like us on Facebook"
               />
             </div>
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
