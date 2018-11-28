@@ -20,6 +20,14 @@ module.exports = {
         name: "images"
       }
     },
+    {
+      resolve: "gatsby-plugin-crisp-chat",
+      options: {
+        websiteId: "68cfb43f-b1ad-44d1-9620-90b761620be5",
+        // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        enableDuringDevelop: true
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

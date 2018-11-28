@@ -6,7 +6,7 @@ require("./Footer.scss");
 const Footer = () => (
   <footer className="kilimanjaro_area">
     <div className="foo_top_header_one section_padding_100_70">
-      <div className="columns is-multiline">
+      <div className="columns is-multiline section">
         <div className="column is-12-mobile is-6-tablet is-3-desktop">
           <div className="kilimanjaro_part">
             <h5>About</h5>
@@ -99,7 +99,7 @@ const Footer = () => (
         </div>
         <div className="column is-12-mobile is-6-tablet is-3-desktop">
           <div className="kilimanjaro_part">
-            <h5>Tags Widget</h5>
+            <h5>Tags</h5>
             <ul className=" kilimanjaro_widget">
               <li>
                 <a href="#">Quotes</a>
@@ -321,14 +321,30 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="kilimanjaro_bottom_header_one section_padding_50 text-center">
+    <div className="kilimanjaro_bottom_header_one section_padding_50 text-center section">
       <div className="columns is-multiline">
         <div className="column is-12">
           <p>
             © All Rights Reserved{" "}
-            <a href="#">
-              The Beautiful Quote
-              <i className="fa fa-love" />
+            <a href="/">
+              The Beautiful Quote{" "}
+              <svg
+                width="15px"
+                height="15px"
+                aria-hidden="true"
+                data-prefix="fas"
+                data-icon="leaf-heart"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+                class="svg-inline--fa fa-leaf-heart fa-w-18 fa-5x"
+              >
+                <path
+                  fill="currentColor"
+                  d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 19.2 2.9 37.7 8.1 55.1C31.6 399.5 4.3 463.2 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6zM430.6 294.4L345.9 380c-5.5 5.5-14.3 5.5-19.8 0l-84.7-85.6c-24.6-24.9-23.2-66.1 4.3-89.1 24-20 59.6-16.4 81.6 5.8l8.6 8.7 8.6-8.7c22-22.2 57.7-25.8 81.6-5.8 27.6 22.9 29.1 64.2 4.5 89.1z"
+                  class=""
+                />
+              </svg>
             </a>
           </p>
         </div>

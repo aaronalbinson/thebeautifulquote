@@ -12,6 +12,7 @@
     "bulma": "^0.7.0",
     "gatsby": "^2.0.33",
     "gatsby-image": "^2.0.14",
+    "gatsby-plugin-crisp-chat": "^2.1.0",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-netlify": "^2.0.0",
     "gatsby-plugin-netlify-cms": "^3.0.0",
