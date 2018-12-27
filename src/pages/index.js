@@ -10,6 +10,7 @@ import Animals from "../img/animals.png";
 import Funny from "../img/funny.png";
 import Students from "../img/students.png";
 import Sports from "../img/sports.png";
+import FoodDrink from "../img/fooddrink.png";
 import Like from "../img/like.png";
 
 export default class IndexPage extends React.Component {
@@ -60,9 +61,9 @@ export default class IndexPage extends React.Component {
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
-                image={Students}
-                categoryName="Student quotes"
-                link="/tags/student/"
+                image={FoodDrink}
+                categoryName="Food & Drink quotes"
+                link="/tags/food-and-drink/"
                 color="#a04f5e"
               />
             </div>
