@@ -10,7 +10,7 @@ import Animals from "../img/animals.png";
 import Funny from "../img/funny.png";
 import Students from "../img/students.png";
 import Sports from "../img/sports.png";
-import FoodDrink from "../img/fooddrink.jpg";
+import FoodDrink from "../img/fooddrink.png";
 import Like from "../img/like.png";
 
 export default class IndexPage extends React.Component {
