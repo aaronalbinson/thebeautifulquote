@@ -85,6 +85,7 @@ export default class IndexPage extends React.Component {
                 image={Love}
                 categoryName="Love Quotes"
                 link="/tags/love/"
+                color="#c225e3"
               />
             </div>
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
@@ -93,6 +94,7 @@ export default class IndexPage extends React.Component {
                 image={Music}
                 categoryName="Music Quotes"
                 link="/tags/animals/"
+                color="#e38f4c"
               />
             </div>
           </div>
