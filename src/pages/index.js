@@ -11,6 +11,7 @@ import Funny from "../img/funny.png";
 import Students from "../img/students.png";
 import Sports from "../img/sports.png";
 import FoodDrink from "../img/fooddrink.png";
+import Love from "../img/love.png";
 import Like from "../img/like.png";
 
 export default class IndexPage extends React.Component {
@@ -80,9 +81,9 @@ export default class IndexPage extends React.Component {
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
               <Category
                 showTitle={true}
-                image="https://placehold.it/350x250"
-                categoryName="Animals"
-                link="/tags/animals/"
+                image={Love}
+                categoryName="Love Quotes"
+                link="/tags/love/"
               />
             </div>
             <div className="column is-3-desktop is-3-tablet is-6-mobile">
