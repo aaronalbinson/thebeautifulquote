@@ -21,6 +21,8 @@ description: >-
   I'm in love with the cities I've never been and the people I've never met is
   the perfect quote t-shirt for anyone that loves to travel, to see the world
   and to have a connection with the places and people they meet.
+amzusa: 'https://www.amazon.com/dp/B07MJW4KD2'
+amzusaprice: '14.99'
 redbubble: >-
   https://www.redbubble.com/people/beautifulquote/works/36247831-im-in-love-with-the-cities-ive-never-been-and-the-people-ive-never-met?asc=u&p=t-shirt
 redbubbleprice: £14.79
