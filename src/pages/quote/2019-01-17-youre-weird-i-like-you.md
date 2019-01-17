@@ -18,6 +18,8 @@ description: >-
   We all love someone who's a bit weird, so this is perfect for those that want
   to show off their love for the weird but wonderful people. Designed to make
   people smile too.
+amzusa: 'https://www.amazon.com/dp/B07MWY2M7G'
+amzusaprice: $14.99
 redbubble: >-
   https://www.redbubble.com/people/beautifulquote/works/36379196-youre-weird-i-like-you?asc=u&p=t-shirt
 redbubbleprice: £14.79
