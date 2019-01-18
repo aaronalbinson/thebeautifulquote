@@ -14,6 +14,8 @@ description: >-
   I stole her heart is the perfect quote for your tshirt to declare how much you
   love your girl. It's also perfect gift to buy your partner so that the world
   knows that your heart is stolen.
+amzusa: 'https://www.amazon.com/dp/B07MX4XJYZ'
+amzusaprice: $14.99
 redbubble: >-
   https://www.redbubble.com/people/beautifulquote/works/36380541-i-stole-her-heart?asc=u&body_color=navy&p=t-shirt
 redbubbleprice: £14.79
